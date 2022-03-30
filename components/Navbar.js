@@ -1,28 +1,33 @@
-import Link from 'next/link';
+import Image from "next/image";
+
 const Navbar = () => {
-    return(
-        <div>
-            <ul>
-                <li><Link href="/"><a>Home</a></Link></li>
-                <li><Link href="/about"><a>About</a></Link></li>
-            </ul>
-<style jsx>{`
-                ul {
-                    background: #333;
-                    color: #fff;
-                    list-style: none;
-                    display: flex;
-                }
-ul li {
-                    font-size: 22px;
-                    margin-right: 50px;
-                }
-ul li a {
-                    color: #fff;
-                    text-decoration: none;
-                }
-            `}</style>
-        </div>
-    );
-}
+  const links = [
+    "Projects",
+    "Partners",
+    "FAQ",
+    "Masters",
+    "Classes",
+    "Couse Experience",
+    "About us",
+  ];
+
+  return (
+    <header>
+      <nav className="navbar">
+        <ul className="navbar-ul">
+          <li>
+            <Image src="/white_logo.png" alt="me" width="122" height="50" />
+          </li>
+          {links.map((link) => {
+            return (
+              <li>
+                <a>{link}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    </header>
+  );
+};
 export default Navbar;

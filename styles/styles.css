@@ -1,0 +1,63 @@
+body {
+  background-color: #fafafa;
+}
+main {
+  margin-left: 13%;
+  width: 74%;
+}
+
+.top-background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 720px;
+  background-color: black;
+  z-index: -1;
+}
+
+.navbar {
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navbar li {
+  padding: 20px;
+  font-size: 19px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.product-course-container {
+  padding: 100px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 50px -30px rgba(34, 34, 34, 1);
+  -moz-box-shadow: 0px 0px 50px -30px rgba(34, 34, 34, 1);
+  box-shadow: 0px 0px 50px -30px rgba(34, 34, 34, 1);
+}
+
+.product-course-container .header {
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.product-course-container .subheader {
+  font-size: 38px;
+  margin-top: 10px;
+}
+
+.product-course-container section {
+  width: 50%;
+}
+
+.product-course-container .picture-section {
+  padding-right: 30px;
+  padding-left: 50px;
+}
