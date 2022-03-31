@@ -1,9 +1,43 @@
 body {
   background-color: #fafafa;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19;
 }
 main {
-  margin-left: 13%;
-  width: 74%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1460px;
+  box-sizing: border-box;
+}
+
+.container-article {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 120px;
+  padding: 130px;
+  -webkit-box-shadow: 0px 0px 60px -30px rgba(34, 34, 34, 0.5);
+  -moz-box-shadow: 0px 0px 60px -30px rgba(34, 34, 34, 0.5);
+  box-shadow: 0px 0px 60px -30px rgba(34, 34, 34, 0.5);
+}
+
+.container-article-header {
+  font-size: 32px;
 }
 
 .top-background {
@@ -18,46 +52,115 @@ main {
 
 .navbar {
   color: white;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  font-size: 19px;
+}
+
+.navbar-menu li:first-child {
+  padding-left: 0px;
 }
 
 .navbar ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding-left: 0px;
 }
 
 .navbar li {
   padding: 20px;
-  font-size: 19px;
   text-decoration: none;
   list-style-type: none;
 }
 
-.product-course-container {
-  padding: 100px;
-  background-color: #ffffff;
-  border-radius: 20px;
-  display: flex;
-  -webkit-box-shadow: 0px 0px 50px -30px rgba(34, 34, 34, 1);
-  -moz-box-shadow: 0px 0px 50px -30px rgba(34, 34, 34, 1);
-  box-shadow: 0px 0px 50px -30px rgba(34, 34, 34, 1);
+.register-button {
+  border: none;
+  background-color: #2e2e2e;
+  font-size: 19px;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
 }
 
 .product-course-container .header {
+  margin-top: 60px;
   font-size: 50px;
   margin-bottom: 0px;
 }
 
 .product-course-container .subheader {
   font-size: 38px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .product-course-container section {
   width: 50%;
 }
 
+.product-course-container .text-section span {
+  font-size: 23px;
+  padding-right: 30px;
+  display: flex;
+  line-height: 55px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.start-register-button {
+  border: none;
+  background-color: #f46632;
+  color: white;
+  font-size: 24px;
+  padding: 24px 120px;
+  border-radius: 20px;
+}
+
 .product-course-container .picture-section {
   padding-right: 30px;
   padding-left: 50px;
+}
+
+.container-product-factory {
+  margin-top: 170px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-translated-image {
+  height: 200px;
+  width: 670px;
+  transform: translate(0, -220px);
+}
+
+.container-product-factory .section-header {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.section-header .icons {
+  margin: 20px 0px;
+}
+
+.container-product-factory .section-text {
+  width: 100%;
+  font-size: 19px;
+}
+
+.container-text {
+  line-height: 50px;
+}
+
+.container-experience {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 65px 140px;
+  font-size: 20px;
 }

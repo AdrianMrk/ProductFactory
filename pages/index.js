@@ -1,22 +1,32 @@
 import Navbar from "../components/navbar";
+import ProductCourse from "../components/ProductCourse";
+import ProductFactory from "../components/ProductFactory";
 const Index = () => {
   return (
     <>
       <div className="top-background"></div>
       <Navbar />
       <main>
-        <article className="product-course-container">
-          <section className="text-section">
-            <h2 className="header">Product Design Course</h2>
-            <h3 className="subheader">Product Factory</h3>
-            <span style={{ marginBottom: "50px" }}>
-              Learn how design thinking, user research, business vision and
-              marketing, and finally designing and creating real digital
-              products for real users.
-            </span>
+        <ProductCourse />
+        <ProductFactory />
+        <article className="container container-article container-experience">
+          <section className="section-header" >
+            <h3 className="container-article-header">Course Experience</h3>
           </section>
-          <section className="picture-section">
-            <img src="/factory_image.png" alt="me" width="100%" />
+          <section style={{ display: "flex" }}>
+            <div>
+            <img src="/factory_icon.png" alt="me" width='370px' style={{marginRight:'60px'}}/>
+            </div>
+            <span className="section-text container-text ">
+              This course has been attempted by zero people who are eager to
+              learn product design, especially user experience and user
+              interface, so it is not a prerequisite, but due to the limited
+              capacity of the priority course with early enrolled people, others
+              can participate in future courses. . <br />  Obviously, the
+              ability to use tools like Adobe Photoshop and Adobe Illustrator as
+              well as Microsoft Word, Excel tools, and of course a lot of
+              enthusiasm and energy,
+            </span>
           </section>
         </article>
       </main>

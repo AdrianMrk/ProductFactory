@@ -12,9 +12,9 @@ const Navbar = () => {
   ];
 
   return (
-    <header>
-      <nav className="navbar">
-        <ul className="navbar-ul">
+    <header className="main-header">
+      <nav className="container navbar">
+        <ul className="navbar-menu">
           <li>
             <Image src="/white_logo.png" alt="me" width="122" height="50" />
           </li>
@@ -25,6 +25,9 @@ const Navbar = () => {
               </li>
             );
           })}
+        </ul>
+        <ul>
+          <button className="register-button">Register</button>
         </ul>
       </nav>
     </header>
