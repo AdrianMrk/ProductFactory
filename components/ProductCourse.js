@@ -2,8 +2,10 @@ const ProductCourse = () => {
   return (
     <article className="container container-article product-course-container">
       <section className="text-section">
-        <h2 className="header">Product Design Course</h2>
-        <h3 className="subheader">Product Factory</h3>
+        <header>
+          <h2 className="header">Product Design Course</h2>
+          <h3 className="subheader">Product Factory</h3>
+        </header>
         <span>
           Learn how design thinking, user research,
           <br /> business vision and marketing, and finally designing and

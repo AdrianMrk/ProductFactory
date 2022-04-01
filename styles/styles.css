@@ -10,6 +10,16 @@ main {
   align-items: center;
   justify-content: center;
 }
+footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: -1rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
 .main-header {
   position: relative;
@@ -20,17 +30,17 @@ main {
 }
 
 .container {
-  width: 100%;
-  max-width: 1460px;
+  width: 96%;
   box-sizing: border-box;
 }
 
 .container-article {
+  margin-bottom: 7vw;
   display: flex;
+  flex-wrap: wrap;
   background-color: #ffffff;
   border-radius: 20px;
-  margin-bottom: 120px;
-  padding: 130px;
+  padding: 8%;
   -webkit-box-shadow: 0px 0px 60px -30px rgba(34, 34, 34, 0.5);
   -moz-box-shadow: 0px 0px 60px -30px rgba(34, 34, 34, 0.5);
   box-shadow: 0px 0px 60px -30px rgba(34, 34, 34, 0.5);
@@ -45,7 +55,8 @@ main {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 720px;
+  height: 47vw;
+  min-height: 400px;
   background-color: black;
   z-index: -1;
 }
@@ -54,7 +65,6 @@ main {
   color: white;
   justify-content: space-between;
   display: flex;
-  width: 100%;
   font-size: 19px;
 }
 
@@ -70,6 +80,7 @@ main {
 }
 
 .navbar li {
+  display: none;
   padding: 20px;
   text-decoration: none;
   list-style-type: none;
@@ -85,64 +96,67 @@ main {
 }
 
 .product-course-container .header {
-  margin-top: 60px;
-  font-size: 50px;
+  margin-top: 3.4vw;
+  font-size: 2rem;
   margin-bottom: 0px;
 }
 
 .product-course-container .subheader {
-  font-size: 38px;
-  margin-top: 20px;
+  font-size: 1.5rem;
+  margin-top: 1.6vw;
+  margin-bottom: 0px;
 }
 
 .product-course-container section {
-  width: 50%;
+  width: 100%;
+  text-align: center;
 }
 
 .product-course-container .text-section span {
-  font-size: 23px;
-  padding-right: 30px;
   display: flex;
-  line-height: 55px;
-  margin-top: 100px;
-  margin-bottom: 80px;
+  font-size: 1rem;
+  margin-top: 6vw;
+  margin-bottom: 5.2vw;
+  line-height: 25px;
 }
 
 .start-register-button {
   border: none;
   background-color: #f46632;
   color: white;
-  font-size: 24px;
-  padding: 24px 120px;
+  font-size: 1.1rem;
+  padding: 1.5vw 7.8vw;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .product-course-container .picture-section {
-  padding-right: 30px;
-  padding-left: 50px;
+  padding-right: 2%;
+  padding-left: 3.4%;
 }
 
 .container-product-factory {
-  margin-top: 170px;
-  padding-top: 65px;
-  padding-bottom: 65px;
+  margin-top: 11.4vw;
+  padding-top: 4vw;
+  padding-bottom: 5vw;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .section-translated-image {
-  height: 200px;
-  width: 670px;
-  transform: translate(0, -220px);
+  height: 30vw;
+  max-height: 200px;
+  width: 100%;
+  transform: translate(0, -14vw);
 }
 
 .container-product-factory .section-header {
-  width: 30%;
+  width: 100%;
+  padding-left: 10%;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
-  margin-bottom: 60px;
 }
 
 .section-header .icons {
@@ -151,16 +165,215 @@ main {
 
 .container-product-factory .section-text {
   width: 100%;
-  font-size: 19px;
+  font-size: 1.1rem;
 }
 
 .container-text {
-  line-height: 50px;
+  line-height: 25px;
 }
 
 .container-experience {
   flex-wrap: wrap;
   justify-content: center;
-  padding: 65px 140px;
-  font-size: 20px;
+  padding: 6.5% 9%;
+  font-size: 1.1rem;
+}
+
+
+.container-experience .container-article-header {
+  margin: 0px;
+  margin-bottom: 40px;
+}
+
+.experience-image {
+  width: 370px;
+  max-width: 100%;
+  float: left;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid #000000;
+  background-color: black;
+  font-size: 1rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.wrapper .option {
+  background: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  /* border: 1px solid #000000; */
+  margin: 1px;
+  padding: 10px 0px;
+}
+input[type="radio"] {
+  display: none;
+}
+#after:checked:checked ~ .option-1,
+#during:checked:checked ~ .option-2,
+#before:checked:checked ~ .option-3 {
+  background: #000000;
+  color: white;
+}
+
+footer .icons {
+  margin-left: 30px;
+}
+
+footer .section-icons {
+  display: flex;
+  justify-content: center;
+}
+
+footer .container{
+  text-align: center;
+}
+
+footer section{
+  margin:20px
+}
+
+@media (min-width: 1530px) {
+  .top-background {
+    height: 720px !important;
+  }
+  .container {
+    width: 100% !important;
+    max-width: 1460px;
+  }
+
+  .product-course-container {
+    margin-bottom: 120px !important;
+    padding: 130px !important;
+  }
+  .product-course-container .header {
+    margin-top: 60px !important;
+    font-size: 50px !important;
+    margin-bottom: 0px;
+  }
+  .product-course-container .subheader {
+    font-size: 38px !important;
+    margin-top: 20px !important;
+  }
+  .product-course-container .picture-section {
+    padding-right: 30px !important;
+    padding-left: 50px !important;
+  }
+  .product-course-container .text-section span {
+    font-size: 23px !important;
+    line-height: 55px !important;
+    margin-top: 100px !important;
+    margin-bottom: 80px !important;
+  }
+  .start-register-button {
+    font-size: 24px !important;
+    padding: 24px 120px !important;
+  }
+  .section-translated-image {
+    transform: translate(0, -220px) !important;
+  }
+  .container-product-factory {
+    margin-top: 150px !important;
+    margin-bottom: 120px !important;
+    padding: 65px 130px !important;
+  }
+  .container-experience {
+    padding: 105px 140px !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  .navbar li {
+    display: block;
+  }
+  .container-product-factory .section-header {
+    margin-bottom: 60px;
+  }
+  .product-course-container .header {
+    font-size: 3.3vw;
+  }
+  .product-course-container .subheader {
+    font-size: 2.5vw;
+    margin-bottom: 24px;
+  }
+  .product-course-container .text-section span {
+    font-size: 1.53vw;
+    line-height: 3.8vw;
+  }
+  .start-register-button {
+    font-size: 1.6vw;
+    padding: 1.5vw 7.8vw;
+    border-radius: 20px;
+    margin-bottom: 0px;
+  }
+  .wrapper {
+    height: 50px !important;
+    width: 800px !important;
+    font-size: 1.1 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-course-container {
+    flex-wrap: nowrap;
+  }
+  .product-course-container section {
+    width: 50%;
+  }
+  .section-translated-image {
+    width: 60%;
+  }
+
+  .container-product-factory .section-header {
+    margin-top: 0;
+    width: 40%;
+  }
+  .container-text {
+    line-height: 50px;
+  }
+  .container-product-factory .section-text {
+    font-size: 19px !important;
+  }
+  .container-experience {
+    font-size: 20px !important;
+  }
+  .product-course-container section {
+    text-align: start;
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 50px;
+    width: 650px;
+  }
+  .container-experience .section-select {
+    margin: 64px;
+  }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+  }
+  footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: -1rem;
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
 }

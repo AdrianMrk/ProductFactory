@@ -5,8 +5,6 @@ const Navbar = () => {
     "Projects",
     "Partners",
     "FAQ",
-    "Masters",
-    "Classes",
     "Couse Experience",
     "About us",
   ];
