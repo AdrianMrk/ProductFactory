@@ -6,7 +6,10 @@ const Experience = () => {
   return (
     <article className="container container-article container-experience">
       <section className="section-header">
-        <h3 className="container-article-header">Course Experience</h3>
+        <h3 className="container-article-header">
+          <div>Experience</div>
+          <div className="topText">Course Experience</div>
+        </h3>
       </section>
       <section className="section-select">
         <div className="wrapper">
@@ -31,13 +34,13 @@ const Experience = () => {
             checked={selectedSection == "before"}
             onChange={(e) => setSelectedSection(e.target.id)}
           />
-          <label for="after" className="option option-1">
+          <label htmlFor="after" className="option option-1">
             <span>After attending the course</span>
           </label>
-          <label for="during" className="option option-2">
+          <label htmlFor="during" className="option option-2">
             <span>During the period</span>
           </label>
-          <label for="before" className="option option-3">
+          <label htmlFor="before" className="option option-3">
             <span>Before attending the course</span>
           </label>
         </div>

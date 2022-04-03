@@ -5,7 +5,10 @@ const ProductFactory = () => {
         <img src="/logo_container.png" alt="me" width="100%" />
       </section>
       <section className="section-header">
-        <h3 className="container-article-header">About us</h3>
+        <h3 className="container-article-header">
+          <div>About</div>
+          <div className="topText">About us</div>
+        </h3>
         <div className="comunity-icons">
           <div className="icons">
             <img src="/facebook_icon.png" alt="me" />
