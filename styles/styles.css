@@ -271,7 +271,7 @@ footer section {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -40%);
   color: black;
   font-size: 18px;
   inline-size: fit-content;
@@ -574,6 +574,9 @@ footer section {
   }
   .section-email {
     height: 50px;
+  }
+  .topText {
+    transform: translate(-50%, -20%);
   }
 }
 
