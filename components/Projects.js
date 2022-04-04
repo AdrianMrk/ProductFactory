@@ -64,13 +64,13 @@ const Projects = () => {
         </section>
         <section className="text-section">
           <header>
-            <h2 className="header">{projectList[count - 1].name}</h2>
+            <h2 className="header"><div className="dot"></div>{projectList[count - 1].name}</h2>
             <span className="section-text">{projectList[count - 1].desc}</span>
           </header>
           {projectList[count - 1].points.map((text) => {
             return (
               <div className="points">
-                <div className="dot"></div>
+                <div className="dot">&#10003;</div>
                 <div>{text}</div>
               </div>
             );

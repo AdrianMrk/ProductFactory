@@ -10,16 +10,6 @@ const Article = () => {
   return (
     <article className="fullwidth-article fullwidth-article-black">
       <div className="container container-request">
-        <section className="picture-section">
-          <div style={{ position: "relative" }}>
-            <div className="back" style={{ position: "absolute" }}>
-              <img src="/post_icon.png" alt="me" width="770px" />
-            </div>
-            <div className="fornt" style={{ position: "relative" }}>
-              <img src="/post_icon.png" alt="me" width="270px" />
-            </div>
-          </div>
-        </section>
         <section className="text-section">
           <header>
             <h2 className="header">Request a list of headings</h2>
@@ -40,11 +30,21 @@ const Article = () => {
             />
             <input type="submit" value="Wyślij" hidden />
           </form>
-          <div style={{ height: "50px" }}>
+          <div className='section-email' style={{ height: "60px" }}>
             <div id="emailResponseInfo" style={{ display: "none" }}>
-              <div className="dot"></div>
+              <div className="dot">&#10003;</div><div>
               Your email has been successfully registered, headlines will be
-              sent to you soon.
+              sent to you soon</div>
+            </div>
+          </div>
+        </section>
+        <section className="picture-section">
+          <div style={{ position: "relative" }}>
+            <div className="back" style={{ position: "absolute" }}>
+              <img src="/post_icon.png" alt="me" width="770px" />
+            </div>
+            <div className="fornt" style={{ position: "relative" }}>
+              <img src="/post_icon.png" alt="me" width="270px" />
             </div>
           </div>
         </section>

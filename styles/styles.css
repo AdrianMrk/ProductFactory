@@ -180,7 +180,7 @@ footer {
 .container-experience {
   flex-wrap: wrap;
   justify-content: center;
-  padding: 3.5vw 9%;
+  padding: 5vw 9%;
   font-size: 1rem;
 }
 
@@ -275,13 +275,12 @@ footer section {
 .fullwidth-article-black {
   background-color: rgb(0, 0, 0);
   margin-bottom: 0px !important;
-  margin:-1rem;
+  margin: -1rem;
 }
 
 .container-request {
   background-color: #000000;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
   color: white;
   padding: 20px;
@@ -289,10 +288,13 @@ footer section {
 .container-request section {
   font-size: 20px;
   line-height: 40px;
-  width: 100%;
 }
 .container-request .header {
   font-size: 2rem;
+}
+.container-request .text-section {
+  position: relative;
+  z-index: 100;
 }
 .container-request .picture-section {
   display: flex;
@@ -332,7 +334,13 @@ footer section {
   color: white;
   padding: 0px 40px;
 }
-
+#emailResponseInfo {
+  font-size: 14px;
+}
+#emailResponseInfo .dot {
+  float: left;
+  padding: 0px 12px;
+}
 .container-project {
   display: flex;
   flex-wrap: wrap;
@@ -375,13 +383,21 @@ footer section {
   padding: 12px 20px;
 }
 .dot {
-  height: 25px;
-  width: 25px;
   background-color: #29d089;
   border-radius: 50%;
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 25px;
+  color: white;
+  padding: 0px 6px 2px 5px;
 }
+
+.header .dot{
+  background-color: rgb(0, 0, 0);
+  padding:0px;
+  width:22px;
+  height:22px;
+  margin-right: 10px;
+} 
 
 .section-preview {
   justify-content: center;
@@ -390,7 +406,7 @@ footer section {
 .preview-container {
   position: relative;
   width: 360px;
-  height: 421px;
+  height: 50px;
 }
 
 .preview-shadow {
@@ -416,7 +432,6 @@ footer section {
 }
 .preview-buttons {
   position: absolute;
-  top: 85%;
   font-size: 36px;
   padding: 11px 26px;
   border: 2px solid black;
@@ -428,6 +443,12 @@ footer section {
 }
 .next {
   right: 0px;
+}
+.preview-shadow {
+  display: none;
+}
+.preview-look {
+  display: none;
 }
 
 @media (min-width: 1530px) {
@@ -494,7 +515,7 @@ footer section {
     padding: 65px 130px !important;
   }
   .container-experience {
-    padding: 40px 140px !important;
+    padding: 40px 140px 85px 140px !important;
   }
   .wrapper {
     width: 1050px !important;
@@ -517,9 +538,36 @@ footer section {
   .container-request .form-email {
     width: 280px;
   }
+  .preview-container {
+    position: relative;
+    width: 360px;
+    height: 421px;
+  }
+  .preview-buttons {
+    top: 85%;
+  }
+
+  .preview-shadow {
+    display: block;
+  }
+  .preview-look {
+    display: block;
+  }
+  .section-email{
+    height:50px;
+  }
 }
 
 @media (min-width: 768px) {
+  #emailResponseInfo {
+    font-size: 22px;
+  }
+
+  .header .dot{
+    width:28px;
+    height:28px;
+  } 
+
   .section-preview {
     margin-top: 32px;
     justify-content: flex-end;
