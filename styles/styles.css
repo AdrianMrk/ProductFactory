@@ -17,7 +17,7 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: white;
-  margin: -1rem;
+  margin: -0.5rem;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -60,11 +60,22 @@ footer {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 103%;
+  width: 100%;
   height: 47vw;
-  min-height: 400px;
+  min-height: 600px;
   background-color: black;
   z-index: -1;
+}
+
+#menu-toggle {
+  font-size: 50px;
+  margin-top: 25px;
+  cursor: pointer;
+  height: 60px;
+}
+
+#menu-register {
+  display: none;
 }
 
 .navbar {
@@ -72,6 +83,11 @@ footer {
   justify-content: space-between;
   display: flex;
   font-size: 19px;
+  height: 130px;
+}
+
+.fullheight {
+  height: 100% !important;
 }
 
 .navbar-menu li:first-child {
@@ -81,12 +97,13 @@ footer {
 .navbar ul {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   padding-left: 0px;
+  background-color: #000000;
 }
 
 .navbar li {
-  display: none;
+  width: 100%;
   padding: 20px;
   text-decoration: none;
   list-style-type: none;
@@ -275,7 +292,7 @@ footer section {
 .fullwidth-article-black {
   background-color: rgb(0, 0, 0);
   margin-bottom: 0px !important;
-  margin: -1rem;
+  margin: -0.5rem;
 }
 
 .container-request {
@@ -391,13 +408,13 @@ footer section {
   padding: 0px 6px 2px 5px;
 }
 
-.header .dot{
+.header .dot {
   background-color: rgb(0, 0, 0);
-  padding:0px;
-  width:22px;
-  height:22px;
+  padding: 0px;
+  width: 22px;
+  height: 22px;
   margin-right: 10px;
-} 
+}
 
 .section-preview {
   justify-content: center;
@@ -553,8 +570,8 @@ footer section {
   .preview-look {
     display: block;
   }
-  .section-email{
-    height:50px;
+  .section-email {
+    height: 50px;
   }
 }
 
@@ -563,10 +580,10 @@ footer section {
     font-size: 22px;
   }
 
-  .header .dot{
-    width:28px;
-    height:28px;
-  } 
+  .header .dot {
+    width: 28px;
+    height: 28px;
+  }
 
   .section-preview {
     margin-top: 32px;
@@ -664,7 +681,6 @@ footer section {
     align-items: center;
     justify-content: center;
     background-color: white;
-    /* margin: -1rem; */
     padding-top: 110px;
     padding-bottom: 110px;
   }
@@ -712,4 +728,17 @@ footer section {
     width: 800px;
     font-size: 1.1;
   }
+  #menu-toggle {
+    display: none;
+  }
+  #menu-register {
+    display: flex;
+  }
+  .navbar ul {
+    align-items: center;
+  }
+  .navbar li {
+    width:auto;
+  }
+
 }

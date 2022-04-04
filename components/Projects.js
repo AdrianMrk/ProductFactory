@@ -54,7 +54,7 @@ const Projects = () => {
     setCount(count > 1 ? count - 1 : count);
   };
   return (
-    <article className="fullwidth-article ">
+    <article className="fullwidth-article">
       <div className="container container-project">
         <section className="section-header">
           <h3 className="container-article-header">
