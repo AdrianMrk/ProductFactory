@@ -375,18 +375,18 @@ footer section {
 }
 .container-project .section-header {
   width: 100%;
-  padding-bottom: 32px;
+  padding-bottom: 16px;
   justify-content: center;
 }
 .container-project section span {
-  font-size: 22px;
-  line-height: 40px;
+  font-size: 1.2rem;
+  line-height: 30px;
 }
 .container-project header {
   padding-bottom: 16px;
 }
 .container-project .header {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .points {
   margin: 16px 0px;
@@ -581,10 +581,16 @@ footer section {
 }
 
 @media (min-width: 768px) {
+  .container-project .section-header {
+    padding-bottom: 32px;
+  }
   #emailResponseInfo {
     font-size: 22px;
   }
-
+  .container-project section span {
+    font-size: 22px;
+    line-height: 40px;
+  }
   .header .dot {
     width: 28px;
     height: 28px;
@@ -743,7 +749,6 @@ footer section {
     align-items: center;
   }
   .navbar li {
-    width:auto;
+    width: auto;
   }
-
 }
